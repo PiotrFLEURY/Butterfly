@@ -1,0 +1,12 @@
+name: Butterfly
+
+packages:
+  - "*"
+
+scripts:
+  format:
+    exec: flutter format .
+  analyze:
+    exec: flutter analyze .
+  test:
+    exec: flutter test

@@ -1,0 +1,19 @@
+name: butterfly_back
+description: An new Dart Frog application
+version: 1.0.0+1
+publish_to: none
+
+environment:
+  sdk: ">=2.18.0 <3.0.0"
+
+dependencies:
+  butterfly_models:
+    path: ../butterfly_models
+  collection: ^1.16.0
+  dart_frog: ^0.3.0
+  dart_frog_web_socket: ^0.1.0-dev.2
+
+dev_dependencies:
+  mocktail: ^0.3.0
+  test: ^1.19.2
+  very_good_analysis: ^3.1.0

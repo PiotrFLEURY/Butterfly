@@ -1,0 +1,8 @@
+{
+    "app_name": "Butterfly",
+    "login_page_forgot_password": "Forgot your password?",
+    "login_page_sign_in": "Sign in",
+    "login_page_create_account": "Create a new account",
+    "login_page_email_hint": "Email",
+    "login_page_password_hint": "Password"
+}
