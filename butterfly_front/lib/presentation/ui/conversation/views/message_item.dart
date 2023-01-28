@@ -1,4 +1,4 @@
-import 'package:butterfly_front/domain/entities/message.dart';
+import 'package:butterfly_models/butterfly_models.dart';
 import 'package:butterfly_front/presentation/styles/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:look/look.dart';

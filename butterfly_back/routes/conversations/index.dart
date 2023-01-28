@@ -26,9 +26,8 @@ Response onRequest(RequestContext context) {
   return Response.json(body: conversations);
 }
 
-Map<String, dynamic> toSummary(Conversation conversation) => {
-      'id': conversation.id,
-      'latestMessage': conversation.messages.last.text,
-      'participants':
-          conversation.participants.map((user) => user.name).toList(),
-    };
+ConversationSummary toSummary(Conversation conversation) => ConversationSummary(
+      id: conversation.id,
+      latestMessage: conversation.messages.last.text,
+      participants: conversation.participants.map((user) => user.name).toList(),
+    );

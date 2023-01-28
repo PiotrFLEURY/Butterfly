@@ -1,4 +1,4 @@
-import 'package:butterfly_front/domain/entities/conversation.dart';
+import 'package:butterfly_models/butterfly_models.dart';
 import 'package:butterfly_front/domain/usecases/fetch_conversation.dart';
 import 'package:butterfly_front/domain/usecases/send_message.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';

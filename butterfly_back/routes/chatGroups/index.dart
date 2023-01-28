@@ -12,7 +12,7 @@ Response onRequest(RequestContext context) {
   );
 }
 
-Map<String, dynamic> toSummary(ChatGroup chat) => {
-      'name': chat.name,
-      'conversationsCount': chat.conversations.length,
-    };
+ChatGroupSummary toSummary(ChatGroup chat) => ChatGroupSummary(
+      name: chat.name,
+      conversationsCount: chat.conversations.length,
+    );
