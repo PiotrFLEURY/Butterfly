@@ -1,5 +1,5 @@
 import 'package:butterfly_front/data/repositories/chat_repository_impl.dart';
-import 'package:butterfly_front/domain/entities/entities.dart';
+import 'package:butterfly_models/butterfly_models.dart';
 import 'package:butterfly_front/domain/repositories/chat_repository.dart';
 import 'package:butterfly_front/domain/usecases/fetch_conversation.dart';
 import 'package:butterfly_front/domain/usecases/send_message.dart';

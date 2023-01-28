@@ -1,4 +1,4 @@
-import 'package:butterfly_front/domain/entities/entities.dart';
+import 'package:butterfly_models/butterfly_models.dart';
 import 'package:butterfly_front/presentation/states/providers.dart';
 import 'package:butterfly_front/presentation/styles/colors.dart';
 import 'package:butterfly_front/presentation/ui/contacts/views/rounded_square_picture.dart';

@@ -1,4 +1,4 @@
-import 'package:butterfly_front/domain/entities/entities.dart';
+import 'package:butterfly_models/butterfly_models.dart';
 
 mixin ChatRepository {
   List<ChatGroup> getChats();
