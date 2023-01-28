@@ -1,3 +1,4 @@
+import 'dart:convert';
 import 'dart:io';
 
 import 'package:butterfly_models/butterfly_models.dart';
@@ -29,11 +30,18 @@ void main() {
       ]);
       final response = route.onRequest(context);
       expect(response.statusCode, equals(HttpStatus.ok));
+      const expectedBody = [
+        {
+          'id': '1',
+          'latestMessage': 'Hello World!',
+          'participants': ['Dart Frog']
+        }
+      ];
       expect(
         response.body(),
         completion(
           equals(
-            '[{"id":"1","messagesCount":1,"participants":["Dart Frog"]}]',
+            jsonEncode(expectedBody),
           ),
         ),
       );

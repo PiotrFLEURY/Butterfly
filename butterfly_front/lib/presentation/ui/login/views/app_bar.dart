@@ -1,6 +1,8 @@
 import 'package:butterfly_front/presentation/styles/colors.dart';
 import 'package:flutter/material.dart';
+import 'package:look/look.dart';
 
+@Look('loginAppBarBuilder')
 class LoginAppBar extends AppBar {
   LoginAppBar({
     super.key,
@@ -12,27 +14,13 @@ class LoginAppBar extends AppBar {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                RichText(
-                  text: const TextSpan(
-                    children: [
-                      TextSpan(
-                        text: 'welcome ',
-                        style: TextStyle(
-                          color: ButterflyColors.tertiary,
-                          fontSize: 22,
-                          fontWeight: FontWeight.w700,
-                        ),
-                      ),
-                      TextSpan(
-                        text: 'Butterfly',
-                        style: TextStyle(
-                          color: ButterflyColors.quaternary,
-                          fontSize: 24,
-                          fontWeight: FontWeight.w900,
-                          fontStyle: FontStyle.italic,
-                        ),
-                      ),
-                    ],
+                const Text(
+                  'Butterfly',
+                  style: TextStyle(
+                    color: ButterflyColors.quaternary,
+                    fontSize: 24,
+                    fontWeight: FontWeight.w900,
+                    fontStyle: FontStyle.italic,
                   ),
                 ),
                 IconButton(
@@ -50,3 +38,5 @@ class LoginAppBar extends AppBar {
           ),
         );
 }
+
+loginAppBarBuilder() => Scaffold(appBar: LoginAppBar());

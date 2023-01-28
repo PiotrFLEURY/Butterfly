@@ -12,7 +12,7 @@ void main() {
   group('GET /', () {
     test('responds with a 200 and "Welcome to Dart Frog!".', () async {
       final context = _MockRequestContext();
-      final response = await route.onRequest(context);
+      final response = route.onRequest(context);
       expect(response.statusCode, equals(HttpStatus.ok));
       expect(
         response.body(),
