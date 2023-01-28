@@ -6,6 +6,8 @@ packages:
 scripts:
   format:
     exec: flutter format .
+  check-format:
+    exec: flutter format --set-exit-if-changed .
   analyze:
     exec: flutter analyze .
   test:
