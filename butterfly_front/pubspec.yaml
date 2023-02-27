@@ -23,7 +23,7 @@ dev_dependencies:
     sdk: flutter
   flutter_launcher_icons: "^0.11.0"
   flutter_lints: ^2.0.0
-  golden_toolkit: ^0.14.0
+  golden_toolkit: ^0.15.0
   look_generator: ^1.1.0
   build_runner: ^2.3.3
   freezed: ^2.2.0
