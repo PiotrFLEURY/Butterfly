@@ -21,7 +21,7 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_launcher_icons: "^0.11.0"
+  flutter_launcher_icons: ^0.13.1
   flutter_lints: ^2.0.0
   golden_toolkit: ^0.14.0
   look_generator: ^1.1.0
